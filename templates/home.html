@@ -2,7 +2,9 @@
 
 <!-- taking a form to another url upon submission -->
 <form action="{% url 'translator' %}">
-	<input type="text">
+	<input type="text" name="originalText">
 	<br><br>
 	<input type="submit" value="Translate!">
 </form>
+
+<a href="{% url 'about' %}"><button type="button">About</button></a>
